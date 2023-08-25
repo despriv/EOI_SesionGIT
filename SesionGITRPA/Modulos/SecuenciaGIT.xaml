@@ -74,13 +74,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Registrar mensaje START" sap:VirtualizedContainerService.HintSize="433.6,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Iniciamos módulo 'SecuenciaGIT'&quot;]" />
+    <ui:LogMessage DisplayName="Registrar mensaje START" sap:VirtualizedContainerService.HintSize="433.6,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Iniciamos 'SecuenciaGIT'&quot;]" />
     <Assign DisplayName="Inicializamos intNumero" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Int32">[intNumero]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="x:Int32">1</InArgument>
+        <InArgument x:TypeArguments="x:Int32">5</InArgument>
       </Assign.Value>
     </Assign>
     <Assign DisplayName="Sumamos una unidad a la variable intNumero" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_2">
@@ -88,7 +88,7 @@
         <OutArgument x:TypeArguments="x:Int32">[intNumero]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="x:Int32">[intNumero + 1]</InArgument>
+        <InArgument x:TypeArguments="x:Int32">[(intNumero + 1)*5+20]</InArgument>
       </Assign.Value>
     </Assign>
   </Sequence>
