@@ -65,7 +65,7 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SecuenciaGIT" sap:VirtualizedContainerService.HintSize="496,497.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SecuenciaGIT" sap:VirtualizedContainerService.HintSize="496,376" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="intNumero" />
     </Sequence.Variables>
@@ -80,15 +80,7 @@
         <OutArgument x:TypeArguments="x:Int32">[intNumero]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="x:Int32">[5+5]</InArgument>
-      </Assign.Value>
-    </Assign>
-    <Assign DisplayName="Sumamos una unidad a la variable intNumero" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_2">
-      <Assign.To>
-        <OutArgument x:TypeArguments="x:Int32">[intNumero]</OutArgument>
-      </Assign.To>
-      <Assign.Value>
-        <InArgument x:TypeArguments="x:Int32">[(intNumero + 1)*5]</InArgument>
+        <InArgument x:TypeArguments="x:Int32">[5+5-2]</InArgument>
       </Assign.Value>
     </Assign>
   </Sequence>
